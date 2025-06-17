@@ -113,9 +113,6 @@ MIGraphXExecutionProvider::MIGraphXExecutionProvider(const MIGraphXExecutionProv
   get_flags_from_env();
 }
 
-MIGraphXExecutionProvider::~MIGraphXExecutionProvider() {
-}
-
 void MIGraphXExecutionProvider::get_flags_from_session_info(const MIGraphXExecutionProviderInfo& info) {
   // Set GPU device to be used
   HIP_CALL_THROW(hipSetDevice(info_.device_id));
